@@ -10,13 +10,22 @@
 # Kayla Council
 # ==========================================================
 
+
+import csv    # We're storing the users answers in a CSV file for future analysis
+
+
 def show_intro():
     """
     Display welcome message.
     Explain what the system does.
     Inform user they will answer 10 questions.
     """
-    pass
+    print("==========================================================")
+    print("Welcome to our Travel Recommendation System!")
+    print("==========================================================")
+    print("This system will recommend a travel destination based on your preferences.")
+    print("You will answer 10 questions.")
+    print("At the end, we will give you a recommendation based on your preferences! \n")
 
 
 def get_valid_input(prompt, options):
@@ -25,7 +34,21 @@ def get_valid_input(prompt, options):
     Validate user input using a loop.
     Return selected value.
     """
-    pass
+    while True:
+        print(prompt)
+
+        # Displaying the optiones (numbered)
+        for number, value in options.items():
+            print(f"{number}. {value}")
+        
+        choice = input("Please enter the number of your choice: ")
+
+        # Checking if the input is valid
+        if choice in options:
+            return options[choice]
+        else:
+            print("Invalid input, please enter the correct input. \n")
+
 
 
 def collect_user_preferences():
@@ -38,34 +61,95 @@ def collect_user_preferences():
     user_preferences = {}
 
     # 1. Budget range
-    # user_preferences["budget"] = ?
+    budget_options = {
+        "1": "low",
+        "2": "medium",
+        "3": "high"
+    }
+    user_preferences["budget"] = get_valid_input("\n 1) What is your budget range?", budget_options)
 
+    
     # 2. Continent
-    # user_preferences["continent"] = ?
+    continent_options = {
+        "1": "North America",
+        "2": "South America",
+        "3": "Europe",
+        "4": "Asia",
+        "5": "Africa",
+    }
+    user_preferences["continent"] = get_valid_input("\n 2) Which continent do you prefer?", continent_options)
 
+    
     # 3. Language Comfort
-    # user_preferences["language"] = ?
+    language_options = {
+        "1": "English-speaking",
+        "2": "Open to other languages"
+    }
+    user_preferences["language"] = get_valid_input("\n 3) Are you comfortable with non-English speaking countries?", language_options)
 
+    
     # 4. Reason for travel
-    # user_preferences["reason"] = ?
+    reason_options = {
+        "1": "Relaxing",
+        "2": "Adventure",
+        "3": "Culture/History"
+    }
+    user_preferences["reason"] = get_valid_input("\n 4) What is your main reason for traveling?", reason_options)
 
+   
     # 5. Preferred Season
-    # user_preferences["season"] = ?
+    season_options = {
+        "1": "Summer",
+        "2": "Fall",
+        "3": "Winter",
+        "4": "Spring"
+    }
+    user_preferences["season"] = get_valid_input("\n 5) What season do you want to travel in?", season_options)
 
+    
     # 6. Temperature Preference
-    # user_preferences["temperature"] = ?
+    temperature_options = {
+        "1": "Hot",
+        "2": "Warm/Mild",
+        "3": "Cold"
+    }
+    user_preferences["temperature"] = get_valid_input("\n 6) What temperature do you prefer?", temperature_options)
 
+    
     # 7. Preferred Landscape
-    # user_preferences["landscape"] = ?
+    landscape_options = {
+        "1": "Beach",
+        "2": "Mountain",
+        "3": "City",
+        "4": "Rural"
+    }
+    user_preferences["landscape"] = get_valid_input("\n 7) What type of landscape do you prefer?", landscape_options)
 
+    
     # 8. Modesty Preference
-    # user_preferences["modesty"] = ?
+    modesty_options = {
+        "1": "Open culture",
+        "2": "More modest, strict culture"
+    }
+    user_preferences["modesty"] = get_valid_input("\n 8) Do you prefer open cultures or more modest, strict cultures?", modesty_options)
+    
 
     # 9. Population Preference
-    # user_preferences["population"] = ?
+    population_options = {
+        "1": "Low population/isolated",
+        "2": "High population/busy"
+    }
+    user_preferences["population"] = get_valid_input("\n 9) Do you prefer low population or busy cities?", population_options)
 
-    # 10. Group Size (Collected but NOT used in scoring)
-    # user_preferences["group_size"] = ?
+    
+    # 10. Group Size (Collected but NOT used in the scoring)
+    group_options = {
+        "1": "Solo",
+        "2": "Couple",
+        "3": "Family/Friends"
+    }
+    user_preferences["group_size"] = get_valid_input("\n 10) Who are you traveling with?", group_options)
+
 
     return user_preferences
 
@@ -75,7 +159,25 @@ def save_user_data(user_preferences):
     Append user data to a CSV file.
     Save for future analysis.
     """
-    pass
+    
+    file_name = "user_data.csv"
+
+    # Checking to see if the file exists and it writes the header only once
+    try:
+        with open(file_name, "x", newline="") as file:
+            writer = csv.writer(file)
+            writer.writerow(user_preferences.keys())
+    except FileExistsError:
+        pass
+
+
+    # Appending the users' data
+    with open(file_name, "a", newline="") as file:
+        writer = csv.writer(file)
+        writer.writerow(user_preferences.values())
+    
+    # Letting the user know that their data has been saved
+    print("\nYour data has been saved for future analysis.")
 
 
 
