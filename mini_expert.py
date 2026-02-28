@@ -15,11 +15,7 @@ import csv    # We're storing the users answers in a CSV file for future analysi
 
 
 def show_intro():
-    """
-    Display welcome message.
-    Explain what the system does.
-    Inform user they will answer 10 questions.
-    """
+   
     print("==========================================================")
     print("Welcome to our Travel Recommendation System!")
     print("==========================================================")
@@ -29,11 +25,7 @@ def show_intro():
 
 
 def get_valid_input(prompt, options):
-    """
-    Display numbered options.
-    Validate user input using a loop.
-    Return selected value.
-    """
+    
     while True:
         print(prompt)
 
@@ -52,11 +44,6 @@ def get_valid_input(prompt, options):
 
 
 def collect_user_preferences():
-    """
-    Ask all 10 questions.
-    Store responses in a dictionary.
-    Return user_preferences.
-    """
 
     user_preferences = {}
 
@@ -155,10 +142,6 @@ def collect_user_preferences():
 
 
 def save_user_data(user_preferences):
-    """
-    Append user data to a CSV file.
-    Save for future analysis.
-    """
     
     file_name = "user_data.csv"
 
