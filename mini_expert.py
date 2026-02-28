@@ -183,34 +183,132 @@ def save_user_data(user_preferences):
 
 # ==========================================================
 # SECTION 2 - KNOWLEDGE BASE (DESTINATIONS)
-# (Person 2 Responsible)
+# Chloe Washington
 # ==========================================================
 
 def load_destinations():
-    """
-    Create and return a list of destinations.
-    Each destination must include attributes that
-    match the scoring questions.
-    (Group size is NOT included here.)
-    """
 
     destinations = [
-
         {
-            "name": "",
-            "budget": "",
-            "continent": "",
-            "language": "",
-            "reason": "",
-            "season": "",
-            "temperature": "",
-            "landscape": "",
-            "modesty": "",
-            "population": ""
+            "name": "Paris",
+            "budget": "high",
+            "continent": "Europe",
+            "language": "Open to other languages",
+            "reason": "Culture/History",
+            "season": "Spring",
+            "temperature": "Warm/Mild",
+            "landscape": "City",
+            "modesty": "Open culture",
+            "population": "High population/busy"
         },
-
-        # Add more destinations here (at least 10)
-
+        {
+            "name": "Tokyo",
+            "budget": "high",
+            "continent": "Asia",
+            "language": "Open to other languages",
+            "reason": "Adventure",
+            "season": "Fall",
+            "temperature": "Warm/Mild",
+            "landscape": "City",
+            "modesty": "More modest, strict culture",
+            "population": "High population/busy"
+        },
+        {
+            "name": "New York",
+            "budget": "medium",
+            "continent": "North America",
+            "language": "English-speaking",
+            "reason": "Adventure",
+            "season": "Summer",
+            "temperature": "Warm/Mild",
+            "landscape": "City",
+            "modesty": "Open culture",
+            "population": "High population/busy"
+        },
+        {
+            "name": "Cape Town",
+            "budget": "medium",
+            "continent": "Africa",
+            "language": "English-speaking",
+            "reason": "Relaxing",
+            "season": "Winter",
+            "temperature": "Warm/Mild",
+            "landscape": "Beach",
+            "modesty": "Open culture",
+            "population": "Low population/isolated"
+        },
+        {
+            "name": "Bali",
+            "budget": "low",
+            "continent": "Asia",
+            "language": "Open to other languages",
+            "reason": "Relaxing",
+            "season": "Summer",
+            "temperature": "Hot",
+            "landscape": "Beach",
+            "modesty": "Open culture",
+            "population": "Low population/isolated"
+        },
+        {
+            "name": "Reykjavik",
+            "budget": "medium",
+            "continent": "Europe",
+            "language": "Open to other languages",
+            "reason": "Adventure",
+            "season": "Winter",
+            "temperature": "Cold",
+            "landscape": "Rural",
+            "modesty": "Open culture",
+            "population": "Low population/isolated"
+        },
+        {
+            "name": "Rio de Janeiro",
+            "budget": "low",
+            "continent": "South America",
+            "language": "Open to other languages",
+            "reason": "Relaxing",
+            "season": "Summer",
+            "temperature": "Hot",
+            "landscape": "Beach",
+            "modesty": "Open culture",
+            "population": "High population/busy"
+        },
+        {
+            "name": "Cairo",
+            "budget": "low",
+            "continent": "Africa",
+            "language": "Open to other languages",
+            "reason": "Culture/History",
+            "season": "Fall",
+            "temperature": "Hot",
+            "landscape": "City",
+            "modesty": "More modest, strict culture",
+            "population": "High population/busy"
+        },
+        {
+            "name": "Vancouver",
+            "budget": "medium",
+            "continent": "North America",
+            "language": "English-speaking",
+            "reason": "Relaxing",
+            "season": "Spring",
+            "temperature": "Warm/Mild",
+            "landscape": "Mountain",
+            "modesty": "Open culture",
+            "population": "Low population/isolated"
+        },
+        {
+            "name": "Buenos Aires",
+            "budget": "high",
+            "continent": "South America",
+            "language": "Open to other languages",
+            "reason": "Culture/History",
+            "season": "Spring",
+            "temperature": "Warm/Mild",
+            "landscape": "City",
+            "modesty": "Open culture",
+            "population": "High population/busy"
+        }
     ]
 
     return destinations
