@@ -172,126 +172,76 @@ def save_user_data(user_preferences):
 def load_destinations():
 
     destinations = [
-        {
-            "name": "Paris",
-            "budget": "high",
-            "continent": "Europe",
-            "language": "Open to other languages",
-            "reason": "Culture/History",
-            "season": "Spring",
-            "temperature": "Warm/Mild",
-            "landscape": "City",
-            "modesty": "Open culture",
-            "population": "High population/busy"
-        },
-        {
-            "name": "Tokyo",
-            "budget": "high",
-            "continent": "Asia",
-            "language": "Open to other languages",
-            "reason": "Adventure",
-            "season": "Fall",
-            "temperature": "Warm/Mild",
-            "landscape": "City",
-            "modesty": "More modest, strict culture",
-            "population": "High population/busy"
-        },
-        {
-            "name": "New York",
-            "budget": "medium",
-            "continent": "North America",
-            "language": "English-speaking",
-            "reason": "Adventure",
-            "season": "Summer",
-            "temperature": "Warm/Mild",
-            "landscape": "City",
-            "modesty": "Open culture",
-            "population": "High population/busy"
-        },
-        {
-            "name": "Cape Town",
-            "budget": "medium",
-            "continent": "Africa",
-            "language": "English-speaking",
-            "reason": "Relaxing",
-            "season": "Winter",
-            "temperature": "Warm/Mild",
-            "landscape": "Beach",
-            "modesty": "Open culture",
-            "population": "Low population/isolated"
-        },
-        {
-            "name": "Bali",
-            "budget": "low",
-            "continent": "Asia",
-            "language": "Open to other languages",
-            "reason": "Relaxing",
-            "season": "Summer",
-            "temperature": "Hot",
-            "landscape": "Beach",
-            "modesty": "Open culture",
-            "population": "Low population/isolated"
-        },
-        {
-            "name": "Reykjavik",
-            "budget": "medium",
-            "continent": "Europe",
-            "language": "Open to other languages",
-            "reason": "Adventure",
-            "season": "Winter",
-            "temperature": "Cold",
-            "landscape": "Rural",
-            "modesty": "Open culture",
-            "population": "Low population/isolated"
-        },
-        {
-            "name": "Rio de Janeiro",
-            "budget": "low",
-            "continent": "South America",
-            "language": "Open to other languages",
-            "reason": "Relaxing",
-            "season": "Summer",
-            "temperature": "Hot",
-            "landscape": "Beach",
-            "modesty": "Open culture",
-            "population": "High population/busy"
-        },
-        {
-            "name": "Cairo",
-            "budget": "low",
-            "continent": "Africa",
-            "language": "Open to other languages",
-            "reason": "Culture/History",
-            "season": "Fall",
-            "temperature": "Hot",
-            "landscape": "City",
-            "modesty": "More modest, strict culture",
-            "population": "High population/busy"
-        },
-        {
-            "name": "Vancouver",
-            "budget": "medium",
-            "continent": "North America",
-            "language": "English-speaking",
-            "reason": "Relaxing",
-            "season": "Spring",
-            "temperature": "Warm/Mild",
-            "landscape": "Mountain",
-            "modesty": "Open culture",
-            "population": "Low population/isolated"
-        },
-        {
-            "name": "Buenos Aires",
-            "budget": "high",
-            "continent": "South America",
-            "language": "Open to other languages",
-            "reason": "Culture/History",
-            "season": "Spring",
-            "temperature": "Warm/Mild",
-            "landscape": "City",
-            "modesty": "Open culture",
-            "population": "High population/busy"
-        }
+        # ==========================================================
+        # NORTH AMERICA
+        # ==========================================================
+        {"name": "New York City, USA", "budget": "high", "continent": "North America", "language": "English-speaking", "reason": "Culture/History", "season": "Summer", "temperature": "Warm/Mild", "landscape": "City", "modesty": "Open culture", "population": "High population/busy"},
+        {"name": "Miami, USA", "budget": "high", "continent": "North America", "language": "English-speaking", "reason": "Relaxing", "season": "Summer", "temperature": "Hot", "landscape": "Beach", "modesty": "Open culture", "population": "High population/busy"},
+        {"name": "Los Angeles, USA", "budget": "high", "continent": "North America", "language": "English-speaking", "reason": "Adventure", "season": "Summer", "temperature": "Warm/Mild", "landscape": "City", "modesty": "Open culture", "population": "High population/busy"},
+        {"name": "Las Vegas, USA", "budget": "medium", "continent": "North America", "language": "English-speaking", "reason": "Adventure", "season": "Summer", "temperature": "Hot", "landscape": "City", "modesty": "Open culture", "population": "High population/busy"},
+        {"name": "Cancún, Mexico", "budget": "low", "continent": "North America", "language": "Open to other languages", "reason": "Relaxing", "season": "Summer", "temperature": "Hot", "landscape": "Beach", "modesty": "Open culture", "population": "High population/busy"},
+        {"name": "Orlando, USA", "budget": "medium", "continent": "North America", "language": "English-speaking", "reason": "Relaxing", "season": "Summer", "temperature": "Hot", "landscape": "City", "modesty": "Open culture", "population": "High population/busy"},
+        {"name": "Toronto, Canada", "budget": "medium", "continent": "North America", "language": "English-speaking", "reason": "Culture/History", "season": "Fall", "temperature": "Cold", "landscape": "City", "modesty": "Open culture", "population": "High population/busy"},
+        {"name": "Punta Cana, Dominican Republic", "budget": "low", "continent": "North America", "language": "Open to other languages", "reason": "Relaxing", "season": "Winter", "temperature": "Hot", "landscape": "Beach", "modesty": "Open culture", "population": "Low population/isolated"},
+        {"name": "Vancouver, Canada", "budget": "medium", "continent": "North America", "language": "English-speaking", "reason": "Relaxing", "season": "Spring", "temperature": "Warm/Mild", "landscape": "Mountain", "modesty": "Open culture", "population": "Low population/isolated"},
+        {"name": "San Francisco, USA", "budget": "high", "continent": "North America", "language": "English-speaking", "reason": "Culture/History", "season": "Spring", "temperature": "Warm/Mild", "landscape": "City", "modesty": "Open culture", "population": "High population/busy"},
+
+        # ==========================================================
+        # AFRICA
+        # ==========================================================
+        {"name": "Cape Town, South Africa", "budget": "medium", "continent": "Africa", "language": "English-speaking", "reason": "Adventure", "season": "Summer", "temperature": "Warm/Mild", "landscape": "Mountain", "modesty": "Open culture", "population": "High population/busy"},
+        {"name": "Stone Town, Tanzania", "budget": "low", "continent": "Africa", "language": "Open to other languages", "reason": "Culture/History", "season": "Summer", "temperature": "Hot", "landscape": "Beach", "modesty": "More modest, strict culture", "population": "High population/busy"},
+        {"name": "Cairo, Egypt", "budget": "low", "continent": "Africa", "language": "Open to other languages", "reason": "Culture/History", "season": "Winter", "temperature": "Warm/Mild", "landscape": "City", "modesty": "More modest, strict culture", "population": "High population/busy"},
+        {"name": "Addis Ababa, Ethiopia", "budget": "low", "continent": "Africa", "language": "Open to other languages", "reason": "Culture/History", "season": "Spring", "temperature": "Warm/Mild", "landscape": "Mountain", "modesty": "More modest, strict culture", "population": "High population/busy"},
+        {"name": "Maputo, Mozambique", "budget": "low", "continent": "Africa", "language": "Open to other languages", "reason": "Relaxing", "season": "Fall", "temperature": "Hot", "landscape": "Beach", "modesty": "Open culture", "population": "High population/busy"},
+        {"name": "Nairobi, Kenya", "budget": "medium", "continent": "Africa", "language": "English-speaking", "reason": "Adventure", "season": "Summer", "temperature": "Warm/Mild", "landscape": "City", "modesty": "Open culture", "population": "High population/busy"},
+        {"name": "Essaouira, Morocco", "budget": "low", "continent": "Africa", "language": "Open to other languages", "reason": "Relaxing", "season": "Summer", "temperature": "Warm/Mild", "landscape": "Beach", "modesty": "More modest, strict culture", "population": "Low population/isolated"},
+        {"name": "Johannesburg, South Africa", "budget": "medium", "continent": "Africa", "language": "English-speaking", "reason": "Culture/History", "season": "Fall", "temperature": "Warm/Mild", "landscape": "City", "modesty": "Open culture", "population": "High population/busy"},
+        {"name": "Marrakech, Morocco", "budget": "medium", "continent": "Africa", "language": "Open to other languages", "reason": "Culture/History", "season": "Fall", "temperature": "Hot", "landscape": "City", "modesty": "More modest, strict culture", "population": "High population/busy"},
+        {"name": "Kigali, Rwanda", "budget": "medium", "continent": "Africa", "language": "English-speaking", "reason": "Culture/History", "season": "Summer", "temperature": "Warm/Mild", "landscape": "City", "modesty": "More modest, strict culture", "population": "Low population/isolated"},
+        {"name": "Luxor, Egypt", "budget": "low", "continent": "Africa", "language": "Open to other languages", "reason": "Culture/History", "season": "Winter", "temperature": "Warm/Mild", "landscape": "Rural", "modesty": "More modest, strict culture", "population": "High population/busy"},
+        {"name": "Stellenbosch, South Africa", "budget": "medium", "continent": "Africa", "language": "English-speaking", "reason": "Relaxing", "season": "Fall", "temperature": "Warm/Mild", "landscape": "Rural", "modesty": "Open culture", "population": "Low population/isolated"},
+
+        # ==========================================================
+        # EUROPE
+        # ==========================================================
+        {"name": "Paris, France", "budget": "high", "continent": "Europe", "language": "Open to other languages", "reason": "Culture/History", "season": "Summer", "temperature": "Warm/Mild", "landscape": "City", "modesty": "Open culture", "population": "High population/busy"},
+        {"name": "London, UK", "budget": "high", "continent": "Europe", "language": "English-speaking", "reason": "Culture/History", "season": "Fall", "temperature": "Warm/Mild", "landscape": "City", "modesty": "Open culture", "population": "High population/busy"},
+        {"name": "Rome, Italy", "budget": "medium", "continent": "Europe", "language": "Open to other languages", "reason": "Culture/History", "season": "Summer", "temperature": "Hot", "landscape": "City", "modesty": "More modest, strict culture", "population": "High population/busy"},
+        {"name": "Istanbul, Turkey", "budget": "low", "continent": "Europe", "language": "Open to other languages", "reason": "Culture/History", "season": "Spring", "temperature": "Warm/Mild", "landscape": "City", "modesty": "More modest, strict culture", "population": "High population/busy"},
+        {"name": "Barcelona, Spain", "budget": "medium", "continent": "Europe", "language": "Open to other languages", "reason": "Adventure", "season": "Summer", "temperature": "Hot", "landscape": "Beach", "modesty": "Open culture", "population": "High population/busy"},
+        {"name": "Lisbon, Portugal", "budget": "low", "continent": "Europe", "language": "Open to other languages", "reason": "Relaxing", "season": "Spring", "temperature": "Warm/Mild", "landscape": "City", "modesty": "Open culture", "population": "High population/busy"},
+        {"name": "Amsterdam, Netherlands", "budget": "high", "continent": "Europe", "language": "English-speaking", "reason": "Relaxing", "season": "Fall", "temperature": "Warm/Mild", "landscape": "City", "modesty": "Open culture", "population": "High population/busy"},
+        {"name": "Prague, Czech Republic", "budget": "low", "continent": "Europe", "language": "Open to other languages", "reason": "Culture/History", "season": "Winter", "temperature": "Cold", "landscape": "City", "modesty": "Open culture", "population": "High population/busy"},
+        {"name": "Athens, Greece", "budget": "low", "continent": "Europe", "language": "Open to other languages", "reason": "Culture/History", "season": "Summer", "temperature": "Hot", "landscape": "City", "modesty": "Open culture", "population": "High population/busy"},
+        {"name": "Berlin, Germany", "budget": "medium", "continent": "Europe", "language": "Open to other languages", "reason": "Adventure", "season": "Fall", "temperature": "Warm/Mild", "landscape": "City", "modesty": "Open culture", "population": "High population/busy"},
+        {"name": "Reykjavik, Iceland", "budget": "high", "continent": "Europe", "language": "English-speaking", "reason": "Adventure", "season": "Winter", "temperature": "Cold", "landscape": "Rural", "modesty": "Open culture", "population": "Low population/isolated"},
+
+        # ==========================================================
+        # SOUTH AMERICA
+        # ==========================================================
+        {"name": "Buenos Aires, Argentina", "budget": "medium", "continent": "South America", "language": "Open to other languages", "reason": "Culture/History", "season": "Spring", "temperature": "Warm/Mild", "landscape": "City", "modesty": "Open culture", "population": "High population/busy"},
+        {"name": "Rio de Janeiro, Brazil", "budget": "high", "continent": "South America", "language": "Open to other languages", "reason": "Relaxing", "season": "Summer", "temperature": "Hot", "landscape": "Beach", "modesty": "Open culture", "population": "High population/busy"},
+        {"name": "La Paz, Bolivia", "budget": "low", "continent": "South America", "language": "Open to other languages", "reason": "Adventure", "season": "Winter", "temperature": "Cold", "landscape": "Mountain", "modesty": "More modest, strict culture", "population": "High population/busy"},
+        {"name": "Santiago, Chile", "budget": "medium", "continent": "South America", "language": "Open to other languages", "reason": "Adventure", "season": "Fall", "temperature": "Warm/Mild", "landscape": "City", "modesty": "Open culture", "population": "High population/busy"},
+        {"name": "Cusco, Peru", "budget": "low", "continent": "South America", "language": "Open to other languages", "reason": "Culture/History", "season": "Winter", "temperature": "Warm/Mild", "landscape": "Mountain", "modesty": "More modest, strict culture", "population": "Low population/isolated"},
+        {"name": "Cartagena, Colombia", "budget": "medium", "continent": "South America", "language": "Open to other languages", "reason": "Relaxing", "season": "Winter", "temperature": "Hot", "landscape": "Beach", "modesty": "Open culture", "population": "High population/busy"},
+        {"name": "Quito, Ecuador", "budget": "low", "continent": "South America", "language": "Open to other languages", "reason": "Culture/History", "season": "Summer", "temperature": "Warm/Mild", "landscape": "Mountain", "modesty": "More modest, strict culture", "population": "High population/busy"},
+        {"name": "Montevideo, Uruguay", "budget": "medium", "continent": "South America", "language": "Open to other languages", "reason": "Relaxing", "season": "Fall", "temperature": "Warm/Mild", "landscape": "Beach", "modesty": "Open culture", "population": "Low population/isolated"},
+        {"name": "Medellín, Colombia", "budget": "low", "continent": "South America", "language": "Open to other languages", "reason": "Adventure", "season": "Spring", "temperature": "Warm/Mild", "landscape": "City", "modesty": "Open culture", "population": "High population/busy"},
+    
+        # ==========================================================
+        # ASIA
+        # ==========================================================
+        {"name": "Tokyo, Japan", "budget": "high", "continent": "Asia", "language": "Open to other languages", "reason": "Culture/History", "season": "Spring", "temperature": "Warm/Mild", "landscape": "City", "modesty": "More modest, strict culture", "population": "High population/busy"},
+        {"name": "Bangkok, Thailand", "budget": "low", "continent": "Asia", "language": "Open to other languages", "reason": "Adventure", "season": "Winter", "temperature": "Hot", "landscape": "City", "modesty": "More modest, strict culture", "population": "High population/busy"},
+        {"name": "Bali, Indonesia", "budget": "low", "continent": "Asia", "language": "Open to other languages", "reason": "Relaxing", "season": "Summer", "temperature": "Hot", "landscape": "Beach", "modesty": "Open culture", "population": "Low population/isolated"},
+        {"name": "Seoul, South Korea", "budget": "high", "continent": "Asia", "language": "Open to other languages", "reason": "Adventure", "season": "Fall", "temperature": "Warm/Mild", "landscape": "City", "modesty": "More modest, strict culture", "population": "High population/busy"},
+        {"name": "Singapore, Singapore", "budget": "high", "continent": "Asia", "language": "English-speaking", "reason": "Culture/History", "season": "Spring", "temperature": "Hot", "landscape": "City", "modesty": "Open culture", "population": "High population/busy"},
+        {"name": "Hanoi, Vietnam", "budget": "low", "continent": "Asia", "language": "Open to other languages", "reason": "Culture/History", "season": "Spring", "temperature": "Warm/Mild", "landscape": "City", "modesty": "More modest, strict culture", "population": "High population/busy"},
+        {"name": "Kyoto, Japan", "budget": "medium", "continent": "Asia", "language": "Open to other languages", "reason": "Culture/History", "season": "Fall", "temperature": "Warm/Mild", "landscape": "City", "modesty": "More modest, strict culture", "population": "Low population/isolated"},
+        {"name": "Luang Prabang, Laos", "budget": "low", "continent": "Asia", "language": "Open to other languages", "reason": "Relaxing", "season": "Winter", "temperature": "Warm/Mild", "landscape": "Rural", "modesty": "More modest, strict culture", "population": "Low population/isolated"}    
+    
     ]
 
     return destinations
@@ -306,44 +256,107 @@ def load_destinations():
 def calculate_score(user_preferences, destination):
     """
     Compare user preferences with destination attributes.
-    Add weighted points when attributes match.
-    Return total score.
+    We use a scoring system where budget is heavily weighted 
+    to prevent recommending expensive trips to low-budget users.
     """
-
     score = 0
+    
+    # Weights: Budget and Continent are usually the most important "dealbreakers"
+    weights = {
+        "budget": 10,      #prioritize budget match
+        "continent": 5,    #prioritize continent
+        "language": 2,
+        "reason": 2,
+        "season": 1,
+        "temperature": 1,
+        "landscape": 2,
+        "modesty": 1,
+        "population": 1
+    }
 
-    # If budget matches - add points
-    # If continent matches - add points
-    # If language matches - add points
-    # If reason matches - add points
-    # If season matches - add points
-    # If temperature matches - add points
-    # If landscape matches - add points
-    # If modesty matches - add points
-    # If population matches - add points
+    for key, weight in weights.items():
+        if user_preferences.get(key) == destination.get(key):
+            score += weight
 
     return score
 
 
 def rank_destinations(user_preferences, destinations):
     """
-    Loop through all destinations.
-    Calculate score for each.
-    Store scores.
-    Identify highest score.
-    Optionally determine top 3.
-    Return best destination and score.
+    Finds the destination with the highest match score.
     """
-    pass
+    best_destination = None
+    highest_score = -1
+
+    for destination in destinations:
+        current_score = calculate_score(user_preferences, destination)
+        if current_score > highest_score:
+            highest_score = current_score
+            best_destination = destination
+
+    return best_destination, highest_score
 
 
-def explain_recommendation(best_destination, score):
+def explain_recommendation(best_destination, score, user_preferences):
     """
-    Display final recommendation.
-    Explain why it was selected.
-    Optionally show match percentage.
+    Displays the recommendation and explains the match.
     """
-    pass
+    # Total possible points is 25 based on the weights above
+    max_possible = 25
+    match_percentage = (score / max_possible) * 100
+
+    print("\n" + "="*60)
+    print("OUR RECOMMENDATION FOR YOU")
+    print("="*60)
+    
+    if best_destination:
+        print(f"Based on your preferences, we recommend: {best_destination['name']}!")
+        print(f"Match Score: {match_percentage:.1f}%")
+        print("\nWhy we chose this for you:")
+        
+        # --- WHAT MATCHES ---
+    print("\n WHAT MATCHES:")
+    if user_preferences['budget'] == best_destination['budget']:
+        print(f"- Budget: It is a {best_destination['budget']} budget destination.")
+    if user_preferences['continent'] == best_destination['continent']:
+        print(f"- Continent: It is in {best_destination['continent']}.")
+    if user_preferences['language'] == best_destination['language']:
+        print(f"- Language: It is {best_destination['language']}.")
+    if user_preferences['reason'] == best_destination['reason']:
+        print(f"- Goal: It is perfect for {best_destination['reason']}.")
+    if user_preferences['landscape'] == best_destination['landscape']:
+        print(f"- Landscape: It has a {best_destination['landscape']} landscape.")
+    if user_preferences['season'] == best_destination['season']:
+        print(f"- Season: The timing matches your preference for {best_destination['season']}.")
+    if user_preferences['temperature'] == best_destination['temperature']:
+        print(f"- Weather: It features {best_destination['temperature']} weather.")
+    if user_preferences['modesty'] == best_destination['modesty']:
+        print(f"- Culture: It has a {best_destination['modesty']} environment.")
+    if user_preferences['population'] == best_destination['population']:
+        print(f"- Vibe: It matches your {best_destination['population']} preference.")
+
+    # --- WHAT IS DIFFERENT ---
+    print("\n WHAT IS DIFFERENT:")
+    if user_preferences['budget'] != best_destination['budget']:
+        print(f"- Budget: You wanted {user_preferences['budget']}, but this is {best_destination['budget']}.")
+    if user_preferences['continent'] != best_destination['continent']:
+        print(f"- Continent: You wanted {user_preferences['continent']}, but this is in {best_destination['continent']}.")
+    if user_preferences['language'] != best_destination['language']:
+        print(f"- Language: You preferred {user_preferences['language']}, but it is {best_destination['language']}.")
+    if user_preferences['reason'] != best_destination['reason']:
+        print(f"- Goal: You wanted {user_preferences['reason']}, but this is better for {best_destination['reason']}.")
+    if user_preferences['landscape'] != best_destination['landscape']:
+        print(f"- Landscape: You wanted {user_preferences['landscape']}, but it is {best_destination['landscape']}.")
+    if user_preferences['season'] != best_destination['season']:
+        print(f"- Season: You preferred {user_preferences['season']}, but this is best in {best_destination['season']}.")
+    if user_preferences['temperature'] != best_destination['temperature']:
+        print(f"- Weather: You wanted {user_preferences['temperature']} weather, but it is typically {best_destination['temperature']}.")
+    if user_preferences['modesty'] != best_destination['modesty']:
+        print(f"- Culture: You picked {user_preferences['modesty']}, but this is a {best_destination['modesty']} area.")
+    if user_preferences['population'] != best_destination['population']:
+        print(f"- Vibe: You wanted a {user_preferences['population']} vibe, but it is {best_destination['population']}.")
+    
+    print("="*60 + "\n")
 
 
 
@@ -369,7 +382,7 @@ def main():
     )
 
     # 5. Display recommendation
-    explain_recommendation(best_destination, score)
+    explain_recommendation(best_destination, score, user_preferences)
 
     # 6. Save user data to CSV
     save_user_data(user_preferences)
