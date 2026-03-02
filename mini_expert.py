@@ -172,9 +172,7 @@ def save_user_data(user_preferences):
 def load_destinations():
 
     destinations = [
-        # ==========================================================
         # NORTH AMERICA
-        # ==========================================================
         {"name": "New York City, USA", "budget": "high", "continent": "North America", "language": "English-speaking", "reason": "Culture/History", "season": "Summer", "temperature": "Warm/Mild", "landscape": "City", "modesty": "Open culture", "population": "High population/busy"},
         {"name": "Miami, USA", "budget": "high", "continent": "North America", "language": "English-speaking", "reason": "Relaxing", "season": "Summer", "temperature": "Hot", "landscape": "Beach", "modesty": "Open culture", "population": "High population/busy"},
         {"name": "Los Angeles, USA", "budget": "high", "continent": "North America", "language": "English-speaking", "reason": "Adventure", "season": "Summer", "temperature": "Warm/Mild", "landscape": "City", "modesty": "Open culture", "population": "High population/busy"},
@@ -186,9 +184,7 @@ def load_destinations():
         {"name": "Vancouver, Canada", "budget": "medium", "continent": "North America", "language": "English-speaking", "reason": "Relaxing", "season": "Spring", "temperature": "Warm/Mild", "landscape": "Mountain", "modesty": "Open culture", "population": "Low population/isolated"},
         {"name": "San Francisco, USA", "budget": "high", "continent": "North America", "language": "English-speaking", "reason": "Culture/History", "season": "Spring", "temperature": "Warm/Mild", "landscape": "City", "modesty": "Open culture", "population": "High population/busy"},
 
-        # ==========================================================
         # AFRICA
-        # ==========================================================
         {"name": "Cape Town, South Africa", "budget": "medium", "continent": "Africa", "language": "English-speaking", "reason": "Adventure", "season": "Summer", "temperature": "Warm/Mild", "landscape": "Mountain", "modesty": "Open culture", "population": "High population/busy"},
         {"name": "Stone Town, Tanzania", "budget": "low", "continent": "Africa", "language": "Open to other languages", "reason": "Culture/History", "season": "Summer", "temperature": "Hot", "landscape": "Beach", "modesty": "More modest, strict culture", "population": "High population/busy"},
         {"name": "Cairo, Egypt", "budget": "low", "continent": "Africa", "language": "Open to other languages", "reason": "Culture/History", "season": "Winter", "temperature": "Warm/Mild", "landscape": "City", "modesty": "More modest, strict culture", "population": "High population/busy"},
@@ -202,9 +198,7 @@ def load_destinations():
         {"name": "Luxor, Egypt", "budget": "low", "continent": "Africa", "language": "Open to other languages", "reason": "Culture/History", "season": "Winter", "temperature": "Warm/Mild", "landscape": "Rural", "modesty": "More modest, strict culture", "population": "High population/busy"},
         {"name": "Stellenbosch, South Africa", "budget": "medium", "continent": "Africa", "language": "English-speaking", "reason": "Relaxing", "season": "Fall", "temperature": "Warm/Mild", "landscape": "Rural", "modesty": "Open culture", "population": "Low population/isolated"},
 
-        # ==========================================================
         # EUROPE
-        # ==========================================================
         {"name": "Paris, France", "budget": "high", "continent": "Europe", "language": "Open to other languages", "reason": "Culture/History", "season": "Summer", "temperature": "Warm/Mild", "landscape": "City", "modesty": "Open culture", "population": "High population/busy"},
         {"name": "London, UK", "budget": "high", "continent": "Europe", "language": "English-speaking", "reason": "Culture/History", "season": "Fall", "temperature": "Warm/Mild", "landscape": "City", "modesty": "Open culture", "population": "High population/busy"},
         {"name": "Rome, Italy", "budget": "medium", "continent": "Europe", "language": "Open to other languages", "reason": "Culture/History", "season": "Summer", "temperature": "Hot", "landscape": "City", "modesty": "More modest, strict culture", "population": "High population/busy"},
@@ -217,9 +211,7 @@ def load_destinations():
         {"name": "Berlin, Germany", "budget": "medium", "continent": "Europe", "language": "Open to other languages", "reason": "Adventure", "season": "Fall", "temperature": "Warm/Mild", "landscape": "City", "modesty": "Open culture", "population": "High population/busy"},
         {"name": "Reykjavik, Iceland", "budget": "high", "continent": "Europe", "language": "English-speaking", "reason": "Adventure", "season": "Winter", "temperature": "Cold", "landscape": "Rural", "modesty": "Open culture", "population": "Low population/isolated"},
 
-        # ==========================================================
         # SOUTH AMERICA
-        # ==========================================================
         {"name": "Buenos Aires, Argentina", "budget": "medium", "continent": "South America", "language": "Open to other languages", "reason": "Culture/History", "season": "Spring", "temperature": "Warm/Mild", "landscape": "City", "modesty": "Open culture", "population": "High population/busy"},
         {"name": "Rio de Janeiro, Brazil", "budget": "high", "continent": "South America", "language": "Open to other languages", "reason": "Relaxing", "season": "Summer", "temperature": "Hot", "landscape": "Beach", "modesty": "Open culture", "population": "High population/busy"},
         {"name": "La Paz, Bolivia", "budget": "low", "continent": "South America", "language": "Open to other languages", "reason": "Adventure", "season": "Winter", "temperature": "Cold", "landscape": "Mountain", "modesty": "More modest, strict culture", "population": "High population/busy"},
@@ -230,9 +222,8 @@ def load_destinations():
         {"name": "Montevideo, Uruguay", "budget": "medium", "continent": "South America", "language": "Open to other languages", "reason": "Relaxing", "season": "Fall", "temperature": "Warm/Mild", "landscape": "Beach", "modesty": "Open culture", "population": "Low population/isolated"},
         {"name": "Medellín, Colombia", "budget": "low", "continent": "South America", "language": "Open to other languages", "reason": "Adventure", "season": "Spring", "temperature": "Warm/Mild", "landscape": "City", "modesty": "Open culture", "population": "High population/busy"},
     
-        # ==========================================================
+        
         # ASIA
-        # ==========================================================
         {"name": "Tokyo, Japan", "budget": "high", "continent": "Asia", "language": "Open to other languages", "reason": "Culture/History", "season": "Spring", "temperature": "Warm/Mild", "landscape": "City", "modesty": "More modest, strict culture", "population": "High population/busy"},
         {"name": "Bangkok, Thailand", "budget": "low", "continent": "Asia", "language": "Open to other languages", "reason": "Adventure", "season": "Winter", "temperature": "Hot", "landscape": "City", "modesty": "More modest, strict culture", "population": "High population/busy"},
         {"name": "Bali, Indonesia", "budget": "low", "continent": "Asia", "language": "Open to other languages", "reason": "Relaxing", "season": "Summer", "temperature": "Hot", "landscape": "Beach", "modesty": "Open culture", "population": "Low population/isolated"},
@@ -250,7 +241,7 @@ def load_destinations():
 
 # ==========================================================
 # SECTION 3 - INFERENCE ENGINE / SCORING LOGIC
-# (Person 3 Responsible)
+# Gabrielle Olds
 # ==========================================================
 
 def calculate_score(user_preferences, destination):
@@ -261,16 +252,16 @@ def calculate_score(user_preferences, destination):
     """
     score = 0
     
-    # Weights: Budget and Continent are usually the most important "dealbreakers"
+    # Weights: budget and continent are the most important dealbreakers
     weights = {
         "budget": 10,      #prioritize budget match
-        "continent": 5,    #prioritize continent
-        "language": 2,
-        "reason": 2,
+        "continent": 8,    #prioritize continent
+        "language": 3,
+        "reason": 5,
         "season": 1,
         "temperature": 1,
-        "landscape": 2,
-        "modesty": 1,
+        "landscape": 3,
+        "modesty": 2,
         "population": 1
     }
 
@@ -301,21 +292,20 @@ def explain_recommendation(best_destination, score, user_preferences):
     """
     Displays the recommendation and explains the match.
     """
-    # Total possible points is 25 based on the weights above
-    max_possible = 25
+    # Total possible points is 34 based on the weights above
+    max_possible = 34
     match_percentage = (score / max_possible) * 100
 
     print("\n" + "="*60)
     print("OUR RECOMMENDATION FOR YOU")
     print("="*60)
     
-    if best_destination:
-        print(f"Based on your preferences, we recommend: {best_destination['name']}!")
-        print(f"Match Score: {match_percentage:.1f}%")
-        print("\nWhy we chose this for you:")
+
+    print(f"Based on your preferences, we recommend: {best_destination['name']}!")
+    print(f"Match Score: {match_percentage:.1f}%")
+    print("\nWhy we chose this for you:")
         
-        # --- WHAT MATCHES ---
-    print("\n WHAT MATCHES:")
+        # what matches
     if user_preferences['budget'] == best_destination['budget']:
         print(f"- Budget: It is a {best_destination['budget']} budget destination.")
     if user_preferences['continent'] == best_destination['continent']:
@@ -335,8 +325,8 @@ def explain_recommendation(best_destination, score, user_preferences):
     if user_preferences['population'] == best_destination['population']:
         print(f"- Vibe: It matches your {best_destination['population']} preference.")
 
-    # --- WHAT IS DIFFERENT ---
-    print("\n WHAT IS DIFFERENT:")
+    #what doesn't match
+    print("\n What is different:")
     if user_preferences['budget'] != best_destination['budget']:
         print(f"- Budget: You wanted {user_preferences['budget']}, but this is {best_destination['budget']}.")
     if user_preferences['continent'] != best_destination['continent']:
